@@ -1,8 +1,8 @@
 # deno-testcontainers-experiment
 
 error: Uncaught Error: Not implemented: See https://github.com/denoland/deno_std/issues/1436
-    at notImplemented (internal:deno_node/polyfills/_utils.ts:7:11)
-    at Object.userInfo (internal:deno_node/polyfills/os.ts:211:5)
+    at notImplemented (ext:deno_node/_utils.ts:7:11)
+    at Object.userInfo (ext:deno_node/os.ts:211:5)
     at RootlessUnixSocketStrategy.getSocketPathFromRunDir (file:///deno/.cache/deno/npm/registry.npmjs.org/testcontainers/9.3.0/dist/src/docker/rootless-unix-socket-strategy.js:51:68)
     at RootlessUnixSocketStrategy.<anonymous> (file:///deno/.cache/deno/npm/registry.npmjs.org/testcontainers/9.3.0/dist/src/docker/rootless-unix-socket-strategy.js:32:99)
     at Generator.next (<anonymous>)
