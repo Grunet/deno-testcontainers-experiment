@@ -4,6 +4,14 @@ import {
     StoppedTestContainer,
     GenericContainer
   } from "npm:testcontainers";
+
+  import os from "node:os";
+
+  os.userInfo = function() {
+    return {
+      uid: 123 // TODO - what should this actually be? https://nodejs.org/api/os.html#osuserinfooptions
+    }
+  };
   
   const container: TestContainer = new GenericContainer("alpine");
   const startedContainer: StartedTestContainer = await container.start();
