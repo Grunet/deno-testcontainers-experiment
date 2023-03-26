@@ -1,3 +1,5 @@
+// deno run --allow-all index.ts
+
 import {
     TestContainer,
     StartedTestContainer,
@@ -9,7 +11,7 @@ import {
 
   os.userInfo = function() {
     return {
-      uid: 123 // TODO - what should this actually be? https://nodejs.org/api/os.html#osuserinfooptions
+      uid: 1 // TODO - what should this actually be? https://nodejs.org/api/os.html#osuserinfooptions
     }
   };
   
